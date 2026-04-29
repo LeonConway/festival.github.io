@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tickets</title>
+</head>
+<body>
+   
+    <!--video background:--> 
+    <video id="backgroundVideo" autoplay loop muted playsinline>
+        <source src="aniback.mp4" type="video/mp4">
+    </video>
+     
+    <!--header-->
+    <header>
+    <div class="logo">MusicFest2025</div>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="BuyNow.html">Buy Now</a>
+                </li>
+                <li>
+                    <a href="lineup.html">Featured Artists</a>
+                </li>
+                <li>
+                    <a href="shedual.html">schedule</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="booking-container">
+        <h1>Book Your Tickets</h1>
+        
+        <form action="#" method="POST">
+            
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Leon Conway" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="leon@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="07554268481" required>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Number of Tickets</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ticket-type">Ticket Type</label>
+                <select id="ticket-type" name="ticket-type" required>
+                    <option value="" disabled selected>Select a type</option>
+                    <option value="general">General Admission</option>
+                    <option value="vip">VIP</option>
+                    <option value="premium">Premium</option>
+                </select>
+            </div>
+            <div class="form-group" style="text-align: center; margin-bottom: 20px;">
+                <label>Total</label>
+                <div id="total-display" style="font-size: 24px; font-weight: bold; color: #fff;">£0.00</div>
+            </div>
+
+            <div class="form-group">
+                <label for="payment">Payment Method</label>
+                <select id="payment" name="payment" required>
+                    <option value="" disabled selected>Select payment method</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="debit-card">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="special-req">Special Requirements</label>
+                <textarea id="special-req" name="special-req" rows="4" placeholder="Dietary restrictions, accessibility needs, etc."></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms" style="margin-bottom: 0; font-weight: normal;">
+                    I agree to the <a href="#">Terms and Conditions</a>
+                </label>
+            </div>
+
+            <div class="button-group">
+                <button type="submit">Book Tickets</button>
+                <button type="reset">Reset Form</button>
+            </div>
+
+        </form>
+    </div>
+    <script src="buynow.js"></script>
+
+
+     
+</body>
+</html>

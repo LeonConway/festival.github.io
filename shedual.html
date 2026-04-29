@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - MusicFest2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!--video background:--> 
+    <video id="backgroundVideo" autoplay loop muted playsinline>
+        <source src="aniback.mp4" type="video/mp4">
+    </video>
+
+     <!--header--> 
+    <header>
+    <div class="logo">MusicFest2025</div>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="BuyNow.html">Buy Now</a>
+                </li>
+                <li>
+                    <a href="lineup.html">Featured Artists</a>
+                </li>
+                <li>
+                    <a href="shedual.html">schedule</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>MusicFest2025</h1>
+
+    <div class="filter-container">
+        <button class="tab-btn active" onclick="openDay('Day1')">Friday</button>
+        <button class="tab-btn" onclick="openDay('Day2')">Saturday</button>
+    </div>
+
+    <div id="Day1" class="schedule-content">
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Artist</th>
+                    <th>Stage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>14:00 - 15:00</td>
+                    <td>Cafuné</td>
+                    <td><span class="stage-garden">Main Stage</span></td>
+                </tr>
+                <tr>
+                    <td>15:30 - 16:30</td>
+                    <td>ThxSoMch</td>
+                    <td><span class="stage-elec">Main Stage</span></td>
+                </tr>
+                <tr>
+                    <td>17:00 - 18:00</td>
+                    <td>Uplift Spice</td>
+                    <td><span class="stage-main">Main Stage</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="Day2" class="schedule-content" style="display:none;">
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Artist</th>
+                    <th>Stage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>18:30 - 19:30</td>
+                    <td>Creepy Nuts</td>
+                    <td><span class="stage-main">Main Stage</span></td>
+                </tr>
+                <tr>
+                    <td>20:00 - 21:00</td>
+                    <td>d4vd</td>
+                    <td><span class="stage-main">Main Stage</span></td>
+                </tr>
+                <tr>
+                    <td>21:30 - 23:00</td>
+                    <td>Måneskin</td>
+                    <td><span class="stage-main">Main Stage</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="shedule.js"></script>
+
+</body>
+</html>
